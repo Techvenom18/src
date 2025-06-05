@@ -1,0 +1,49 @@
+// QuoteApp.cpp
+#include <iostream>
+#include <string>
+#include <vector>
+
+int main() {
+    std::vector<std::string> quotes = {
+        "Believe in yourself and all that you are. – Christian D. Larson",
+        "Every day is a new beginning. Take a deep breath and start again.",
+        "The pain you feel today will be the strength you feel tomorrow.",
+        "Be the change that you wish to see in the world. – Mahatma Gandhi",
+        "Happiness is not something ready made. It comes from your own actions. – Dalai Lama",
+        "Work hard in silence, let success make the noise.",
+        "Your limitation—it’s only your imagination.",
+        "Push yourself, because no one else is going to do it for you.",
+        "Great things never come from comfort zones.",
+        "Success doesn’t just find you. You have to go out and get it.",
+        "Dream it. Wish it. Do it.",
+        "Sometimes later becomes never. Do it now.",
+        "Don’t stop when you’re tired. Stop when you’re done.",
+        "Wake up with determination. Go to bed with satisfaction.",
+        "Do something today that your future self will thank you for.",
+        "Little things make big days.",
+        "It’s going to be hard, but hard does not mean impossible.",
+        "Don’t wait for opportunity. Create it.",
+        "The key to success is to focus on goals, not obstacles.",
+        "Difficult roads often lead to beautiful destinations.",
+        "Stay positive, work hard, make it happen.",
+        "The only way to do great work is to love what you do. – Steve Jobs",
+        "You only fail when you stop trying.",
+        "Success is what happens after you have survived all your mistakes.",
+        "Don't limit your challenges. Challenge your limits.",
+        "A goal without a plan is just a wish. – Antoine de Saint-Exupéry"
+    };
+
+    std::cout << "✨ Motivational Quotes ✨\nPress [Enter] to see each one...\n";
+
+    for (size_t i = 0; i < quotes.size(); ++i) {
+        std::cout << "Quote " << (i + 1) << ": " << quotes[i] << "\n";
+        if (i != quotes.size() - 1) {
+            std::cout << "Press [Enter] for next quote...";
+            std::cin.ignore();
+        } else {
+            std::cout << "\n🎉 End of Quotes!\n";
+        }
+    }
+
+    return 0;
+}
